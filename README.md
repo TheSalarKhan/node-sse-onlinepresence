@@ -21,5 +21,9 @@ I've only tested this with EventSource object in JS. The event source object wil
 and in response the server will return a list of all the clientIds connected. When a clientId leaves on the next heartbeat it
 isn't visible in the list.
 ```
-source = new EventSource("http://127.0.0.1:9091/heartbeat/?&clientId=clientId1");source.addEventListener("message", (ev)=>{ console.log(ev.data) });
+source = new EventSource("http://127.0.0.1:9091/heartbeat/?&clientId=clientId1");
+source.addEventListener("message", (ev)=>{ console.log(ev.data) });
 ```
+
+## License
+MIT.
